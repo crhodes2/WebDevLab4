@@ -1,0 +1,31 @@
+Exercise 1 (For all exercises, feel free to look at the Week 4 example app in the class GitHub repository)
+What does the [Key] attribute tell EntityFramework?
+	-It tells the entity framework to make a certain class method unique to the database using that key attribute
+What are connection strings used for?
+	-Connection strings specifies info about a data source and the means of connecting to it.
+The Users you added in step 10 are now gone.  Why did they disappear?
+	-Because of the setting in the database context tells us to drop the data that were created. The DropCreateDatabaseIfModelChanges method.
+
+Exercise 2
+
+Add a UserViewModel.  Use the view model in place of the User entity model in your User actions and views.
+Why would we use view models rather than the entity models in the controllers and views?
+
+Free free to copy the "Map" utility functions from the Week 4 example app.
+
+Run the application to make sure it is still functioning as expected.
+
+Implement the Details, Delete and Edit functions that are accessible at the end of each User in the User list.  (Look at the example app for help)
+Exercise 3 (Look at the example app for help)
+
+Add another entity to your application that is "related" to the User entity.  Remember to add a DbSet collection for your new entity to your DbContext class.
+
+In the User list view, add another action for viewing a list of the new entity you added.
+
+Create actions and corresponding views for listing and creating your new entity.  Use view models rather then interacting in directly with the new entity model.
+
+Run the application:
+
+Test to see if you can access the list for your new entity from the User list.
+
+Test to see if you can create an instance of your new entity from the list for your new entity.
